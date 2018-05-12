@@ -1,24 +1,27 @@
 #!/bin/bash
 
+# if [[ $(git status -s) ]]
+# then
+#     echo "The working directory is dirty. Please commit any pending changes."
+#     exit 1;
+# fi
+
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+echo "Deleting old publication"
+rm -rf public
+mkdir public
+git worktree prune
+rm -rf .git/worktrees/public/
 
-# Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+echo "Checking out gh-pages branch into public"
+git worktree add -B gh-pages public origin/gh-pages
 
-# Go To Public folder
-cd public
-# Add changes to git.
-git add .
+echo "Getting latest commit id"
+commit_id=$(git rev-parse HEAD)
+echo $commit_id
 
-# Commit changes.
-msg="rebuilding site `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
-git commit -m "$msg"
+echo "Generating site"
+hugo
 
-# Push source and build repos.
-git push origin master
-
-# Come Back up to the Project Root
-cd ..
+echo "Updating gh-pages branch"
+cd public && git add --all && git commit -m "Publish $commit_id" && git push origin gh-pages
