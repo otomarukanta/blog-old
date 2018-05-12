@@ -24,4 +24,9 @@ echo "Generating site"
 hugo
 
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publish $commit_id" && git push origin gh-pages
+cd public
+git config user.email "kanta208@gmail.com"
+git config user.name "otomarukanta"
+git add --all
+git commit -m "Publish $commit_id"
+git push origin gh-pages
