@@ -21,8 +21,6 @@ enableEmoji = true
 # Missing translations will default to this content language
 defaultContentLanguage = "en"
 
-publishDir = "docs"
-
 [params.info]
 description = "otomarukanta's blog"
 title404 = "Nothing's here!"
