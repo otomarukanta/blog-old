@@ -28,5 +28,5 @@ cd public
 git config user.email "kanta208@gmail.com"
 git config user.name "otomarukanta"
 git add --all
-git commit -m "Publish $commit_id"
+git commit -m "Publish $commit_id [ci skip]"
 git push origin gh-pages
