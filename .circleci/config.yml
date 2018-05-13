@@ -14,6 +14,6 @@ jobs:
           command: hugo -v
       - run:
           name: "Test Website"
-          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore
+          command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - deploy:
           command: ./deploy.sh
