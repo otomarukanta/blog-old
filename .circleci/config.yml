@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Sync git submodule"
+          command: git submodule sync && git submodule update --init
+      - run:
           name: "Run Hugo"
           command: hugo -v
       - run:
