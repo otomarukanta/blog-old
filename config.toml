@@ -98,7 +98,7 @@ page = "/:slug/"
 name = "HOME"
 weight = -10
 identifier = "repository"
-url = "https://github.com/MunifTanjim/minimo"
+url = "http://blog.otomarukanta.com/"
 
 [blackfriday]
 hrefTargetBlank = true
