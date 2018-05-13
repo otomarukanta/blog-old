@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: "Run Hugo"
-          command: hugo
+          command: hugo -v
       - run:
           name: "Test Website"
           command: htmlproofer ~/project/public --allow-hash-href --check-html --empty-alt-ignore
