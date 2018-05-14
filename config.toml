@@ -1,111 +1,107 @@
 baseURL = "https://blog.otomarukanta.com/"
+languageCode = "ja"
+defaultContentLanguage = "ja"
 title = "kaprekar"
-# for smart copyright line, leave this blank and check [params.copyright]
-copyright = ""
-
-theme = "minimo"
-
-disqusShortname = ""
+theme = "hugo-tranquilpeak-theme"
 googleAnalytics = "UA-119109457-1"
-
-Paginate = 5
-preserveTaxonomyNames = true
-
-enableRobotsTXT = true # generate robots.txt
-
-# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
-pygmentsCodefences = true
-
-enableEmoji = true
-
-# Missing translations will default to this content language
-defaultContentLanguage = "en"
-
-[params.info]
-description = "otomarukanta's blog"
-title404 = "Nothing's here!"
-
-[params.assets]
-favicon = "favicon.ico"
-customCSS = []
-customJS = []
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
-
-[params.copyright]
-prefix = ""
-holder = "otomarukanta"
-startYear = "2018"
-suffix = ""
-
-[params.settings]
-# date & time format: https://golang.org/pkg/time/
-dateFormat = "2006, Jan 02"
-listDateFormat = "2006, Jan 02"
-archiveDateFormat = "Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-showReadingTime = true
-taxonomyCloudShuffle = true
-accentColor = "#ffcd00"
-hideMainMenu = false
-
-[params.sidebar]
-enable = true
-
-[params.widgets]
-homepage = ["recent_posts"]
-sidebar = ["about","taxonomy_cloud"]
-footer = ["social_menu"]
-
-[params.opengraph.facebook]
-admins = [] # array of Facebook IDs
-appID = ""
-pageID = ""
-
-[params.opengraph.twitter]
-page = "" # Twitter page username
-
-[params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
-
-[params.social]
-github = "otomarukanta"
-twitter = "otomarukanta"
-
-[params.comments]
-enable = false
-
-[params.comments.staticman]
-enable = true
-apiEndpoint = "https://api.staticman.net/v2/entry"
-maxDepth = 2
-
-[params.comments.staticman.github]
-username = "MunifTanjim"
-repository = "minimo"
-branch = "master"
-
-[taxonomies]
-author = "authors"
-category = "categories"
-series = "series"
-tag = "tags"
+Paginate = 7
+canonifyurls = true
 
 [permalinks]
-page = "/:slug/"
+stock-daily = "/stock-daily/:year:month:day/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[author]
+  name = "otomarukanta"
+  bio = "I like anime, horse racing, music, stock etc..."
+  job = "Engineer"
+  location = "Japan"
+  gravatarEmail = "kanta208@gmail.com"
+  twitter = "otomarukanta"
+
+[params]
+  sidebarBehavior = 2
+  thumbnailImage = true
+  thumbnailImagePosition = "bottom"
+  coverImage = "cover.jpg"
+  keywords = ["development", "next-gen", "stock-daily"]
+
+  syntaxHighlighter = "highlight.js"
+
+  clearReading = true
+
+  hierarchicalCategories = true
+  description = "Hugo tranquilpeak theme demo"
+
+  imageGallery = true
+
+  autoThumbnailImage = true
+
+  [[params.sharingOptions]]
+    name = "Facebook"
+    icon = "fa-facebook-official"
+    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Google+"
+    icon = "fa-google-plus"
+    url = "https://plus.google.com/share?url=%s"
+
+  [params.header.rightLink]
+    class = ""
+    icon = ""
+    url = "/#about"
 
 [[menu.main]]
-name = "HOME"
-weight = -10
-identifier = "repository"
-url = "http://blog.otomarukanta.com/"
+  weight = 0
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 1
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  url = "/categories"
+[[menu.main]]
+  weight = 2
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 3
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  url = "/archives"
+[[menu.main]]
+  weight = 4
+  identifier = "search"
+  name = "Search"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
+  url = "/#search"
+  class = "st-search-show-outputs"
+[[menu.main]]
+  weight = 5
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/#about"
 
-[blackfriday]
-hrefTargetBlank = true
-
-[languages]
-# edit this block for your own language
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
+[[menu.links]]
+  weight = 0
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  url = "https://github.com/otomarukanta"
