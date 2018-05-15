@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stock Daily on kaprekar</title>
+    <link>https://blog.otomarukanta.com/categories/stock-daily/</link>
+    <description>Recent content in Stock Daily on kaprekar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 14 May 2018 23:41:48 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.otomarukanta.com/categories/stock-daily/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>株日記 20180514</title>
+      <link>https://blog.otomarukanta.com/post/stock-daily/20180514/</link>
+      <pubDate>Mon, 14 May 2018 23:41:48 +0900</pubDate>
+      
+      <guid>https://blog.otomarukanta.com/post/stock-daily/20180514/</guid>
+      <description>&lt;p&gt;ビリングシステムの決算が好調でストップ高。株を始めてから初のストップ高でした。
+明日の値動きも楽しみです。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

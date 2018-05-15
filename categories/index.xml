@@ -5,9 +5,19 @@
     <link>https://blog.otomarukanta.com/categories/</link>
     <description>Recent content in Categories on kaprekar</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
     
 	<atom:link href="https://blog.otomarukanta.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Stock Daily</title>
+      <link>https://blog.otomarukanta.com/categories/stock-daily/</link>
+      <pubDate>Mon, 14 May 2018 23:41:48 +0900</pubDate>
+      
+      <guid>https://blog.otomarukanta.com/categories/stock-daily/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

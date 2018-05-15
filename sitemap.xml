@@ -3,22 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.otomarukanta.com/stock-daily/20180511/</loc>
+    <loc>https://blog.otomarukanta.com/post/stock-daily/20180514/</loc>
+    <lastmod>2018-05-14T23:41:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.otomarukanta.com/post/stock-daily/20180511/</loc>
     <lastmod>2018-05-11T16:36:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.otomarukanta.com/stock-daily/20180510/</loc>
+    <loc>https://blog.otomarukanta.com/post/stock-daily/20180510/</loc>
     <lastmod>2018-05-10T22:44:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.otomarukanta.com/stock-daily/20180509/</loc>
+    <loc>https://blog.otomarukanta.com/post/stock-daily/20180509/</loc>
     <lastmod>2018-05-09T23:54:30+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.otomarukanta.com/authors/</loc>
+    <loc>https://blog.otomarukanta.com/archives/</loc>
     <priority>0</priority>
   </url>
   
@@ -28,13 +33,14 @@
   </url>
   
   <url>
-    <loc>https://blog.otomarukanta.com/series/</loc>
+    <loc>https://blog.otomarukanta.com/post/</loc>
+    <lastmod>2018-05-14T23:41:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.otomarukanta.com/stock-daily/</loc>
-    <lastmod>2018-05-11T16:36:14+09:00</lastmod>
+    <loc>https://blog.otomarukanta.com/categories/stock-daily/</loc>
+    <lastmod>2018-05-14T23:41:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -45,7 +51,7 @@
   
   <url>
     <loc>https://blog.otomarukanta.com/</loc>
-    <lastmod>2018-05-11T16:36:14+09:00</lastmod>
+    <lastmod>2018-05-14T23:41:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
