@@ -25,6 +25,7 @@ stock-daily = "/stock-daily/:year:month:day/"
 
 [params]
   sidebarBehavior = 2
+  clearReading = false
   thumbnailImage = true
   thumbnailImagePosition = "bottom"
   coverImage = "cover.jpg"
@@ -32,7 +33,6 @@ stock-daily = "/stock-daily/:year:month:day/"
 
   syntaxHighlighter = "highlight.js"
 
-  clearReading = true
 
   hierarchicalCategories = true
   description = "Hugo tranquilpeak theme demo"
